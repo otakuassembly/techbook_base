@@ -1,7 +1,7 @@
 # techbook_base
 
 OtakuAssemblyでの，技術同人誌のベースリポジトリ...になるやつ．
-Re:VIEWを使用．
+Re:VIEW 4.0を使用．
 
 ## ビルド方法
 
