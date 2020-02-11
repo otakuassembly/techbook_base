@@ -1,0 +1,13 @@
+image: "otakuassembly/review"
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - review version
+    - review vol
+    - review pdfmaker config.yml
+  artifacts:
+    paths:
+      - OtakuAssembly.pdf
