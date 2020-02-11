@@ -1,0 +1,11 @@
+# output
+*.pdf
+!images/*.pdf
+*.epub
+webroot/
+*-text/
+
+# Ruby
+.bundle/
+Gemfile.lock
+vendor/bundle
