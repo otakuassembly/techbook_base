@@ -6,7 +6,8 @@ permissions:
 on:
   push:
     branches:
-      - main
+      - master
+      - otaku
   pull_request:
 
 jobs:
