@@ -20,4 +20,4 @@ jobs:
         bundler-cache: true
 
     - name: build
-      run: bundler exec review pdfmaker config.yml
+      run: bundler exec rake pdf
