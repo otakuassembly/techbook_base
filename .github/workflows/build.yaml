@@ -17,11 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4.2.2
 
-    - name: install dependencies
-      run: |
-        sudo apt update -y
-        sudo apt install -y texlive-science
-
     - uses: ruby/setup-ruby@v1.206.0
       with:
         bundler-cache: true
