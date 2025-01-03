@@ -12,12 +12,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: ghcr.io/vvakame/review:5.9
+
     steps:
     - uses: actions/checkout@v4.2.2
 
-    - uses: ruby/setup-ruby@v1.206.0
-      with:
-        bundler-cache: true
+    - name: setup ruby
+      run: bundle install
 
     - name: build
       run: bundler exec rake pdf
