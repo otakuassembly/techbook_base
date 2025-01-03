@@ -17,9 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4.2.2
 
-    - uses: ruby/setup-ruby@v1.206.0
-      with:
-        bundler-cache: true
+    - name: setup ruby
+      run: bundle install
 
     - name: build
       run: bundler exec rake pdf
