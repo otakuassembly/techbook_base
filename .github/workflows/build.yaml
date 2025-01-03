@@ -1,0 +1,23 @@
+name: Build
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4.2.2
+
+    - uses: ruby/setup-ruby@v1.206.0
+      with:
+        bundler-cache: true
+
+    - name: build
+      run: bundler exec review pdfmaker config.yml
