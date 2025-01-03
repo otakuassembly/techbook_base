@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: vvakame/review:5.9
+    container: ghcr.io/vvakame/review:5.9
 
     steps:
     - uses: actions/checkout@v4.2.2
