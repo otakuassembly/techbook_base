@@ -16,7 +16,7 @@ jobs:
     container: ghcr.io/vvakame/review:5.9
 
     steps:
-    - uses: actions/checkout@v4.2.2
+    - uses: actions/checkout@v6.0.3
 
     - name: setup ruby
       run: bundle install
